@@ -1,0 +1,27 @@
+
+@import "mixins";
+@import "variables";
+ul{
+  width: 100%;
+  display: inline-flex;
+  background-color: $menu-background;
+  margin: 0px;
+}
+li{
+  float: left;
+  width: (100% / 6);
+  display: block;
+  width: 100%;
+}
+a{
+  color:red;
+  text-decoration: none;
+  padding: 16px;
+  display: block;
+  text-align: center;
+  &:hover{
+    background: lighten($link-hover, 6);
+  }
+  @include clearFix;
+
+}
