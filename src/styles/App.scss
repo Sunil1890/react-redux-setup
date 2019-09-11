@@ -1,27 +1,50 @@
 
 @import "mixins";
 @import "variables";
-ul{
-  width: 100%;
-  display: inline-flex;
-  background-color: $menu-background;
-  margin: 0px;
-}
-li{
-  float: left;
-  width: (100% / 6);
-  display: block;
-  width: 100%;
-}
-a{
-  color:red;
-  text-decoration: none;
-  padding: 16px;
-  display: block;
-  text-align: center;
-  &:hover{
-    background: lighten($link-hover, 6);
-  }
-  @include clearFix;
 
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 10px;
+  border-bottom: 1px solid #ccc;
 }
+
+nav {
+  margin-left: auto;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+li {
+  margin-left: 16px;
+  list-style: none;
+}
+// ul{
+//   width: 100%;
+//   display: inline-flex;
+//   background-color: $menu-background;
+//   margin: 0px;
+// }
+// li{
+//   float: left;
+//   width: (100% / 6);
+//   display: block;
+//   width: 100%;
+// }
+// a{
+//   color:red;
+//   text-decoration: none;
+//   padding: 16px;
+//   display: block;
+//   text-align: center;
+//   &:hover{
+//     background: lighten($link-hover, 6);
+//   }
+//   @include clearFix;
+
+// }

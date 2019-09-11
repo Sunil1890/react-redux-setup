@@ -5,6 +5,7 @@ import { fetchPosts } from "../actions/postsActions";
 class Posts extends Component {
   componentWillMount() {
     console.log('//2')
+    this.props.a= 20;
     this.props.fetchPosts()
   }
   render() {
@@ -15,7 +16,7 @@ class Posts extends Component {
     </div>
     ))
     return (
-      <div>
+      <div style={{padding: "20px"}}>
         <h1>Posts</h1>
         {postItems}
       </div>

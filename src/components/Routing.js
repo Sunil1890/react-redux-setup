@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Posts from './Posts'
+import Posts from './Posts';
+import PostForm from './PostForm';
 function Routing() {
   return (
     <Router>
@@ -31,6 +32,7 @@ function Home() {
   return (
     <div>
       <h2>Home</h2>
+      <PostForm />
     </div>
   );
 }

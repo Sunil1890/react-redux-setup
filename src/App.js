@@ -1,17 +1,14 @@
 import React, { Component } from 'react';
-import Posts  from "./components/Posts";
-import PostForm  from "./components/PostForm";
 import './styles/App.scss';
-import Routing  from './components/Routing'
+// import Routing  from './components/Routing';
+import Login  from './components/Login';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Routing />
-        {/* <PostForm/>
-        <hr />
-         <Posts /> */}
+        {/* <Routing /> */}
+        <Login />
       </div>
     );
   }

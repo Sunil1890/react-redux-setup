@@ -23,11 +23,12 @@ class PostForm extends Component {
       body: this.state.body
     }
    //call actions
+   console.log(post)
    this.props.createPosts(post)
   }
   render() {
     return (
-      <div>
+      <div style={{padding: "20px"}}>
         <h1>Add Posts</h1>
         <form onSubmit={this.onSubmit}>
           <div>
